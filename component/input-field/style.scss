@@ -1,0 +1,38 @@
+.input-field {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #4f8a8b;
+    box-shadow: 0 0 5px rgba(79, 138, 139, 0.5);
+  }
+
+  &.error {
+    border-color: red; /* Red border for input when there's an error */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); /* Slight red shadow for error state */
+  }
+}
+
+.error-message-text-color {
+  color: red;
+  font-size: 14px; /* Smaller font size for error messages */
+  margin-top: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -18px; /* Position the error message just below the input field */
+  width: 100%;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.text-sm {
+  font-size: 12px; /* Optional for reducing font size of error message */
+}
+
+.position-absolute {
+  position: absolute;
+}
